@@ -1,10 +1,10 @@
-from flask import Flask
+from flask import Flask, render_template
 application = Flask(__name__)
 
 
 @application.route('/')
 def welcome():
-    return 'Welcome to the LULZHACK CTF'
+    return render_template('index.html')
 
 
 if __name__ == "__main__":
