@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+  <title>HOB GO - Watch TV Programmes and Films Online</title>
+
+  <link rel="stylesheet" href="/static/css/main-hbo.css">
+  <link rel="stylesheet" href="/static/css/signin.css">
+</head>
+
+<body>
+  <section class="iap-landing">
+    <div class="content">
+      <div class="hero-image-container" style="background-image: url('/static/images/night-king.png')">
+        <div class="content-header">
+          <div class="content-nav">
+            <div class="hob-logo">
+              <img src="/static/images/hob-go.png" />
+            </div>
+          </div>
+          <form class="header-text" id="login-form">
+            <h3>Sign in</h3>
+            <div class="form-group  ">
+              <label for="email" class="signin-custom">
+                Email
+              </label>
+              <input autocomplete="off" class="form-control" type="email" name="email" id="iap-email" placeholder=""
+                required="">
+            </div>
+            <div class="form-group ">
+              <label for="password" class="signin-custom">
+                Password
+              </label>
+              <div class="input-group ">
+                <input class="form-control " name="password" id="password" type="password" placeholder="" required=""
+                  onkeyup="enableshow();" onchange="validateiapRegistrationForm();">
+                <div class="input-group-prepend showpwdbtn_prepend" style="display: none;">
+                  <i class="glyphicon glyphicon-eye-close input-group-addon showpwdbtn" id="basic-addon2">show</i>
+                </div>
+              </div>
+              <label for="password" class="error" style="display:none;">Please enter your password</label>
+            </div>
+            <p>
+              <button class="btn btn-lg btn-primary subscribe-now" id="signin">
+                GO
+              </button>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="iap-landing-footer">
+        <div class="hob-logo">
+          <img src="/static/images/hob-go.png">
+        </div>
+        <div class="right-side-links">
+          <a id="help" rel="noopener noreferrer" href="/faq" class="text-capitalize v-align pull-left pl-15 pr-15"
+            data-l10n-id="TITLE_HELP" data-send-event="viewedHelp">Help</a>
+          <a href="/privacy" class="text-capitalize v-align pull-left pl-15 pr-15" data-l10n-id="TITLE_PRIVACY_NL"
+            data-send-event="viewedPrivacy">Privacy</a>
+          <a href="/terms_of_service" class="text-capitalize v-align pull-left pl-15 pr-15" data-l10n-id="TERMS_OF_USE"
+            data-send-event="viewedTermsOfUse">Terms</a>
+          <a href="/licenses" class="text-capitalize v-align pull-left pl-15 pr-15" data-l10n-id="BOTTOM_LEGAL"
+            data-send-event="viewedLegalNotices">Legal Notices</a>
+        </div>
+        <div class="social-media-icons stay-connect">
+          <a id="website" rel="noopener noreferrer" target="_blank" href="/" class="pull-left pl-15 pr-15"><i
+              class="icon website" aria-hidden="true"></i></a>
+          <a id="facebook" rel="noopener noreferrer" target="_blank" href="https://www.facebook.com/"
+            class="pull-left pl-15 pr-15"><i class="icon facebook" aria-hidden="true"></i></a>
+          <a id="twitter" rel="noopener noreferrer" target="_blank" href="https://twitter.com/"
+            class="pull-left pl-15 pr-15"><i class="icon twitter" aria-hidden="true"></i></a>
+          <a id="youtube" rel="noopener noreferrer" target="_blank" href="https://www.youtube.com/"
+            class="pull-left pl-15 pr-15"><i class="icon youtube" aria-hidden="true"></i></a>
+          <a id="instagram" rel="noopener noreferrer" target="_blank" href="https://www.instagram.com/"
+            class="pull-left pl-15 pr-15"><i class="icon instagram" aria-hidden="true"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <script src="/static/js/main.js"></script>
+</body>
+
+</html>

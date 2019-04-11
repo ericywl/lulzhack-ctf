@@ -1,0 +1,13 @@
+.signin-custom {
+    font-size: 25px;
+    color: white;
+    padding-bottom: 5px;
+}
+
+.form-group {
+    width: 70% !important;
+}
+
+.input-group {
+    width: 100% !important;
+}
