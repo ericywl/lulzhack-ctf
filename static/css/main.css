@@ -1,6 +1,13 @@
-@charset "UTF-8";
+body {
+    padding-top: 76px;
+}
+
+.content {
+    height: 100%;
+    background-color: black
+}
+
 .container {
-    content: "";
-    background: url("/static/img/night-king.png") no-repeat;
     width: 100%;
+    background-size: 100%;
 }
