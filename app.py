@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request
 application = Flask(__name__)
 
 
@@ -6,9 +6,12 @@ application = Flask(__name__)
 def welcome():
     return render_template('index.html')
     
-@application.route('/signin')
+@application.route('/signin', methods=['GET', 'POST'])
 def signin():
-    return render_template('signin.html')
+    error = None
+    if request.method == 'POST':
+        error = 'Invalid credentials. Please try again.'
+    return render_template('signin.html', error=error)
     
 @application.errorhandler(404)
 def page_not_found(err):
