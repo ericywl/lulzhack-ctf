@@ -24,7 +24,7 @@
               <img src="/static/images/hob-go.png" />
             </div>
           </div>
-          <form class="header-text" id="login-form">
+          <form class="header-text" id="login-form" action="" method="post">
             <h3>Sign in</h3>
             <div class="form-group  ">
               <label for="email" class="signin-custom">
@@ -38,13 +38,14 @@
                 Password
               </label>
               <div class="input-group ">
-                <input class="form-control " name="password" id="password" type="password" placeholder="" required=""
-                  onkeyup="enableshow();" onchange="validateiapRegistrationForm();">
+                <input class="form-control " name="password" id="password" type="password" placeholder="" required="">
                 <div class="input-group-prepend showpwdbtn_prepend" style="display: none;">
                   <i class="glyphicon glyphicon-eye-close input-group-addon showpwdbtn" id="basic-addon2">show</i>
                 </div>
               </div>
-              <label for="password" class="error" style="display:none;">Please enter your password</label>
+              {% if error %}
+                <p class="error">{{ error }}</p>
+              {% endif %}
             </div>
             <p>
               <button class="btn btn-lg btn-primary subscribe-now" id="signin">
