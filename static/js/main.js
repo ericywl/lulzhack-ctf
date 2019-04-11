@@ -1,15 +1,22 @@
 window.onload = function () {
-    const sub = document.getElementById("subscribe")
+    const sub = document.getElementById("subscribe");
     if (!!sub) {
         sub.onclick = function () {
-            window.location = "/subscribe"
+            window.location = "/subscribe";
         }
     }
 
-    const goHome = document.getElementById("go-home")
+    const goHome = document.getElementById("go-home");
     if (!!goHome) {
-        goHome.onclick = function () {
-            window.location = "/"
-        }
+        goHome.onclick = redirectHome;
     }
+
+    const hobLogos = document.getElementsByClassName("hob-logo");
+    for (let i = 0; i < hobLogos.length; i++) {
+        hobLogos[i].onclick = redirectHome;
+    }
+}
+
+const redirectHome = () => {
+    window.location = "/";
 }
