@@ -11,3 +11,9 @@
 .input-group {
     width: 100% !important;
 }
+
+.error {
+    padding-top: 20px;
+    font-size: 20px !important;
+    color: #e40914 !important;
+}
