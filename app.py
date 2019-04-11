@@ -3,9 +3,9 @@ application = Flask(__name__)
 
 
 @application.route('/')
-def hello_world():
-    return 'Hello, World!'
+def welcome():
+    return 'Welcome to the LULZHACK CTF'
 
 
 if __name__ == "__main__":
-    application.run(host='0.0.0.0', port='8080')
+    application.run(host='127.0.0.1', port='8080')
